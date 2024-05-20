@@ -104,6 +104,7 @@
     </dependencies>
 
     <build>
+        <finalName>JatekBazar</finalName>
         <plugins>
 
             <plugin>
@@ -218,5 +219,13 @@
 
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/BBecca35/JatekBazar</url>
+        </repository>
+    </distributionManagement>
 
 </project>
