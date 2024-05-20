@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-alpine3.14
-COPY "./target/JatekBazar.jar" "JatekBazar.jar"
-EXPOSE 8080
-CMD [ "java", "-jar", "/JatekBazar.jar" ]
+FROM openjdk:17.0-jdk-slim-bullseye
+COPY "./target/JatekBazar.jar" "/application/JatekBazar.jar"
+EXPOSE 8082
+CMD [ "java", "-jar", "/application/JatekBazar.jar" ]
